@@ -1,4 +1,5 @@
 LAMP Stack (using phpmyadmin)
+
 1) Open Ubuntu Terminal
 2) Type command 'sudo apt update'
 3) Type command 'sudo apt install apache2' //install Apache
