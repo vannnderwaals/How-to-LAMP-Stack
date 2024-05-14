@@ -1,0 +1,13 @@
+LAMP Stack (using MariaDB)
+
+1) Open Ubuntu Terminal
+2) Type command 'sudo apt update'
+3) Type command 'sudo apt install -y apache2 apache2-utils'
+4) Type command 'sudo apt install -y mariadb-server mariadb-client'
+5) Type command 'sudo mysql_secure_installation'
+6) Type command 'sudo apt install -y php php-mysql libapache2-mod-php'
+7) Type command 'sudo systemctl restart apache2'
+8) Type command 'sudo apt install net-tools'
+9) Type command 'ifconfig'
+10) Copy inet IP address and paste it on browser //this is to test Apache running
+11) Type command 'echo "<php phpinfo(); ?>" | sudo tee /var/www/html/phpinfo.php' // this is to check if LAMP stack is running
