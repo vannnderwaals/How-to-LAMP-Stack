@@ -1,0 +1,28 @@
+LAMP Stack (using phpmyadmin)
+1) Open Ubuntu Terminal
+2) Type command 'sudo apt update'
+3) Type command 'sudo apt install apache2' //install Apache
+4) Open browser and type 'localhost' to see if its working
+5) Type command 'sudo apt install libapache2-mod php -y' //install PHP
+6) Type command 'sudo systemctl restart apache2'
+7) Type command 'sudo gnome-text-editor /var/www/html/phpinfo.php'
+8) Write in gnome editor '<?php phpinfo() ?>' then click Save
+9) Open browser and type 'localhost/phpinfo.php' to confirm its working
+10) Type command 'php -v' //to check PHP version
+11) Type command 'sudo apt install mysql-server' //install MySQL Server
+12) Type command 'sudo apt install mysql-client' //install MySQL Client
+13) Type command 'sudo apt install php8.1-mysql'
+14) Type command 'sudo apt install php8.1-curl'
+15) Type command 'php -v'
+16) Type command 'sudo systemctl status mysql' //to check ig MySQL is running
+17) Type command 'sudo apt install phpmyadmin' //to install phpmyadmin
+18) Click Yes on Configuring phpmyadmin
+19) Set your password for MySQL
+20) Type command 'sudo systemctl restart apache2'
+21) Type command 'sudo gnome-text-editor /etc/apache2/apache2.conf'
+22) Add at the end of the editor this snippet: 'Include /etc/phpmyadmin/apache.conf' then click Save
+23) Type command 'sudo systemctl restart apache2'
+24) Type command 'sudo /etc/init.d/mysql restart'
+25) Open browser and type 'localhost/phpymyadmin'
+26) Type command 'sudo gnome-text-editor /etc/phpmyadmin/config-db.php' //to find username and password
+27) Login in your phpmyadmin
